@@ -7,4 +7,12 @@ public class GuestRoom extends Room {
         super(roomNumber, type, isAvailable);
         this.numberOfBeds = numberOfBeds;
     }
+
+    public int getNumberOfBeds() {
+        return numberOfBeds;
+    }
+    public void setNumberOfBeds(int numberOfBeds) {
+        this.numberOfBeds = numberOfBeds;
+    }
+    
 }
