@@ -4,12 +4,14 @@ public class Worker implements Cloneable, Comparable<Worker> {
 	private String name;
     private int age;
     private int workerID;
+    private boolean isAvailable;
     
  // Constructor
-    public Worker(String name, int age, int workerID) {
+    public Worker(String name, int age, int workerID, boolean isAvailable) throws CloneNotSupportedException {
         this.name = name;
         this.age = age;
         this.workerID = workerID;
+        this.isAvailable = isAvailable;
     }
 
     // Getter and Setter methods
@@ -30,6 +32,12 @@ public class Worker implements Cloneable, Comparable<Worker> {
     }
     public void setWorkerID(int workerID){
     	this.workerID = workerID;
+    }
+    public boolean getIsAvailable(){
+    	return isAvailable;
+    }
+    public void setIsAvailable(boolean isAvailable){
+    	this.isAvailable = isAvailable;
     }
 
     // toString method
