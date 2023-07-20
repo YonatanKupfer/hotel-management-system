@@ -5,8 +5,8 @@ public class FunctionHall extends Room{
 	private int capacity;
 	
 	// Constructor
-    public FunctionHall(int roomNumber, String type, boolean isAvailable, Worker worker, String purpose, int capacity) throws CloneNotSupportedException {
-        super(roomNumber, type, isAvailable, worker);
+    public FunctionHall(int roomNumber, String type, String purpose, int capacity) throws CloneNotSupportedException {
+        super(roomNumber, type);
         this.purpose = purpose;
         this.capacity = capacity;
     }
